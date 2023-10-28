@@ -650,6 +650,7 @@ footer .copyright {
   }
 
   #banner3 {
+    display: none;
     padding: 0 40px;
   }
 
@@ -659,10 +660,12 @@ footer .copyright {
   }
 
   #banner3 h2 {
+    -webkit-text-stroke: none;
     font-size: 1em;
   }
 
   #banner3 h3 {
+    -webkit-text-stroke: none;
     font-size: 10px;
   }
 
@@ -731,6 +734,7 @@ footer .copyright {
   }
 
   #banner3 {
+    display: none;
     padding: 0 20px;
   }
 
