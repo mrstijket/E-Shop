@@ -559,7 +559,7 @@ footer .copyright {
 
 /* Start Media Query */
 
-@media (max-width:799px) {
+@media (max-width:1024px) {
   .section-p1 {
     padding: 40px 40px;
   }
@@ -686,7 +686,7 @@ footer .copyright {
   }
 }
 
-@media(max-width:477px) {
+@media(max-width:480px) {
   .section-p1 {
     padding: 20px 20px;
   }
