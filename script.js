@@ -21,7 +21,7 @@ let productsHTML = '';
 
 products.forEach((product) => {
   productsHTML += `
-    <div class="pro">
+    <div class="pro" onclick="window.location.href='singleproduct.html'">
       <img src="${product.image}">
       <div class="des">
         <span>${product.owner}</span>
@@ -35,7 +35,9 @@ products.forEach((product) => {
         </div>
         <h4>${(product.priceCents / 100).toFixed(2)} ₺</h4>
       </div>
-      <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+      <button id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
+      <!--<button id="addCart" onclick="detail(${product.id})">-->
+      <a><i class="fal fa-shopping-cart cart"></i></a></button>
     </div>
   `;
 });
