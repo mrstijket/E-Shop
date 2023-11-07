@@ -21,7 +21,7 @@ let productsHTML = '';
 
 products.forEach((product) => {
   productsHTML += `
-    <div class="pro" onclick="window.location.href='singleproduct.html'">
+    <div class="pro" onclick="window.location.href='singleproduct.html'; localStorage.setItem('productNumber', ${product.id});">
       <img src="${product.image}">
       <div class="des">
         <span>${product.owner}</span>
@@ -42,4 +42,6 @@ products.forEach((product) => {
   `;
 });
 
-document.querySelector('.pro-container').innerHTML = productsHTML;
+if (document.querySelector('.pro-container')) {
+  document.querySelector('.pro-container').innerHTML = productsHTML;
+}
