@@ -63,7 +63,7 @@ function suggestionFunc() {
       let suggestion = products[Math.floor(Math.random() * products.length)];
       if (contains(usedSuggestionNumbers, suggestion)) {
         //TODO
-        console.log("Same Product to suggest, return this code and resolve this!!");
+        console.log("Same Product suggested, return this code and resolve this!!");
       } else {
         usedSuggestionNumbers[suggestionCount] = suggestion;
         suggestHTML += `
