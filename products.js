@@ -1,151 +1,197 @@
 const products = [{
   id: 1,
-  owner: "2kye",
-  image: "img/products/f1.jpg",
-  name: "Renkli Gömlek",
+  owner: "BAW",
+  image: [
+    "img/product/p1_1.jpg",
+    "img/product/p1_2.jpg",
+    "img/product/p1_3.jpg",
+    "img/product/p1_4.jpg"
+  ],
+  name: "Kalın Taşlı Alloy Bileklik",
   rating: {
     stars: 5,
     count: 10
   },
   priceCents: 49900,
   keywords: [
-    "gömlek",
-    "renkli",
-    "yaz"
+    "kalın",
+    "bileklik",
+    "alloy"
   ]
 },
 {
   id: 2,
-  owner: "2kye",
-  image: "img/products/f2.jpg",
-  name: "Yaprak Gömlek",
+  owner: "BAW",
+  image: [
+    "img/product/p2_1.jpg",
+    "img/product/p2_2.jpg",
+    "img/product/p2_3.jpg",
+    "img/product/p2_4.jpg"
+  ],
+  name: "Su Yolu Renkli Baget Taşlı Bileklik",
   rating: {
     stars: 4,
     count: 17
   },
   priceCents: 49900,
   keywords: [
-    "gömlek",
-    "yaprak",
-    "yaz"
+    "baget",
+    "beyaz",
+    "su yolu"
   ]
 },
 {
   id: 3,
-  owner: "2kye",
-  image: "img/products/f3.jpg",
-  name: "Çiçekli Gömlek",
+  owner: "BAW",
+  image: [
+    "img/product/p3_1.jpg",
+    "img/product/p3_2.jpg",
+    "img/product/p3_3.jpg",
+  ],
+  name: "Su Yolu Zirkon Taşlı Bileklik",
   rating: {
     stars: 4,
     count: 45
   },
   priceCents: 49900,
   keywords: [
-    "gömlek",
-    "çiçekli",
-    "yaz"
+    "bileklik",
+    "zirkon",
+    "su yolu"
   ]
 },
 {
   id: 4,
-  owner: "2kye",
-  image: "img/products/f4.jpg",
-  name: "Lavanta Gömlek",
+  owner: "BAW",
+  image: [
+    "img/product/p4_1.jpg",
+    "img/product/p4_2.jpg",
+    "img/product/p4_3.jpg",
+  ],
+  name: "Su Yolu Beyaz Baget Taşlı Bileklik",
   rating: {
     stars: 5,
     count: 24
   },
   priceCents: 49900,
   keywords: [
-    "gömlek",
-    "lavanta",
-    "yaz"
+    "beyaz",
+    "baget",
+    "su yolu"
   ]
 },
 {
   id: 5,
-  owner: "2kye",
-  image: "img/products/f5.jpg",
-  name: "Kadife Gömlek",
+  owner: "BAW",
+  image: [
+    "img/product/p5_1.jpg",
+    "img/product/p5_2.jpg",
+    "img/product/p5_3.jpg",
+  ],
+  name: "Tek Taşlı Rodyum Kaplama Bileklik",
   rating: {
     stars: 4,
     count: 11
   },
   priceCents: 49900,
   keywords: [
-    "gömlek",
-    "kadife",
-    "yaz"
+    "tek taş",
+    "rodyum",
+    "bileklik"
   ]
 },
 {
   id: 6,
-  owner: "2kye",
-  image: "img/products/f6.jpg",
-  name: "Kadife Ceket",
+  owner: "BAW",
+  image: [
+    "img/product/p6_1.jpg",
+    "img/product/p6_2.jpg",
+    "img/product/p6_3.jpg",
+    "img/product/p6_4.jpg",
+  ],
+  name: "Asansörlü Su Yolu Zirkon Bileklik",
   rating: {
     stars: 5,
     count: 6
   },
   priceCents: 49900,
   keywords: [
-    "ceket",
-    "kadife",
-    "yaz"
+    "asansörlü",
+    "zirkon",
+    "su yolu"
   ]
 },
 {
   id: 7,
-  owner: "2kye",
-  image: "img/products/f7.jpg",
-  name: "Çiçekli Pantolon",
+  owner: "BAW",
+  image: [
+    "img/product/p7_1.jpg",
+    "img/product/p7_2.jpg",
+    "img/product/p7_3.jpg",
+    "img/product/p7_4.jpg",
+  ],
+  name: "Altın Kaplı Swarovski Kare Taş Bileklik",
   rating: {
     stars: 4,
     count: 4
   },
   priceCents: 49900,
   keywords: [
-    "pantolon",
-    "çiçekli",
-    "yaz"
+    "altın",
+    "swarovski",
+    "kare taş"
   ]
 },
 {
   id: 8,
-  owner: "2kye",
-  image: "img/products/f8.jpg",
-  name: "Tribal Bluz",
+  owner: "BAW",
+  image: [
+    "img/product/p8_2.jpg",
+    "img/product/p8_3.jpg",
+    "img/product/p8_4.jpg",
+    "img/product/p8_5.jpg",
+  ],
+  name: "Kelepçe Dizayn Roma Rakamlı Bileklik",
   rating: {
     stars: 5,
     count: 9
   },
   priceCents: 49900,
   keywords: [
-    "tribal",
-    "bluz",
-    "yaz"
+    "roma",
+    "kelepçe",
+    "rakam"
   ]
 },
 {
   id: 9,
-  owner: "2kye",
-  image: "img/products/n1.jpg",
-  name: "Mavi Gömlek",
+  owner: "BAW",
+  image: [
+    "img/product/p9_1.jpg",
+    "img/product/p9_2.jpg",
+    "img/product/p9_3.jpg"
+  ],
+  name: "Altın Kaplama Zirkon Taşlı Bileklik",
   rating: {
     stars: 5,
     count: 16
   },
   priceCents: 49900,
   keywords: [
-    "gömlek",
-    "mavi",
-    "günlük"
+    "altın",
+    "zirkon",
+    "bileklik"
   ]
 },
 {
   id: 10,
-  owner: "2kye",
-  image: "img/products/n2.jpg",
+  owner: "BAW",
+  image: [
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg"
+  ],
   name: "Kareli Gömlek",
   rating: {
     stars: 5,
@@ -160,8 +206,13 @@ const products = [{
 },
 {
   id: 11,
-  owner: "2kye",
-  image: "img/products/n3.jpg",
+  owner: "BAW",
+  image: [
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg"
+  ],
   name: "Beyaz Gömlek",
   rating: {
     stars: 5,
@@ -176,8 +227,13 @@ const products = [{
 },
 {
   id: 12,
-  owner: "2kye",
-  image: "img/products/n4.jpg",
+  owner: "BAW",
+  image: [
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg"
+  ],
   name: "Asker Gömlek",
   rating: {
     stars: 5,
@@ -192,8 +248,13 @@ const products = [{
 },
 {
   id: 13,
-  owner: "2kye",
-  image: "img/products/n5.jpg",
+  owner: "BAW",
+  image: [
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg"
+  ],
   name: "Kot Gömlek",
   rating: {
     stars: 5,
@@ -208,8 +269,13 @@ const products = [{
 },
 {
   id: 14,
-  owner: "2kye",
-  image: "img/products/n6.jpg",
+  owner: "BAW",
+  image: [
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg"
+  ],
   name: "Çizgili Şort",
   rating: {
     stars: 5,
@@ -224,8 +290,13 @@ const products = [{
 },
 {
   id: 15,
-  owner: "2kye",
-  image: "img/products/n7.jpg",
+  owner: "BAW",
+  image: [
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg"
+  ],
   name: "Kargo Gömlek",
   rating: {
     stars: 5,
@@ -239,8 +310,13 @@ const products = [{
   ]
 }, {
   id: 16,
-  owner: "2kye",
-  image: "img/products/n8.jpg",
+  owner: "BAW",
+  image: [
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg",
+    "img/products/f1.jpg"
+  ],
   name: "Bol Kesim Gömlek",
   rating: {
     stars: 5,

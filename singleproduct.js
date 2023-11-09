@@ -2,25 +2,14 @@ import products from "./products.js";
 
 let productNumber = localStorage.getItem("productNumber");
 let singleproductHTML = '';
+let smallImgHTML = '';
 
 products.forEach((product) => {
   if (product.id == productNumber) {
     singleproductHTML += `
     <div class="single-pro-image">
-      <img src="${product.image}" width="100%" id="mainImg">
+      <img src="${product.image[0]}" width="100%" id="mainImg">
       <div class="small-img-group">
-          <div class="small-img-col">
-              <img src="${product.image}" width="100%" class="smallImg">
-          </div>
-          <div class="small-img-col">
-              <img src="${product.image}" width="100%" class="smallImg">
-          </div>
-          <div class="small-img-col">
-              <img src="${product.image}" width="100%" class="smallImg">
-          </div>
-          <div class="small-img-col">
-              <img src="${product.image}" width="100%" class="smallImg">
-          </div>
       </div>
     </div>
     <div class="single-pro-details">
@@ -47,10 +36,27 @@ products.forEach((product) => {
       </span>
     </div>
   `;
+
+    for (let i = 0; i < product.image.length; i++) {
+      smallImgHTML += `
+        <div class="small-img-col">
+          <img src="${product.image[i]}" width="100%" class="smallImg">
+        </div>`;
+    }
   }
 });
 
 document.querySelector('.single-product').innerHTML = singleproductHTML;
+document.querySelector('.small-img-group').innerHTML = smallImgHTML;
+
+let mainImg = document.getElementById("mainImg");
+let smallImg = document.getElementsByClassName("smallImg");
+
+for (let i = 0; i < smallImg.length; i++) {
+  smallImg[i].onclick = function () {
+    mainImg.src = smallImg[i].src;
+  }
+}
 
 
 function contains(a, obj) {
@@ -73,7 +79,7 @@ for (let suggestionCount = 1; suggestionCount < products.length; suggestionCount
       usedSuggestionNumbers[suggestionCount] = suggestion;
       suggestHTML += `
         <div class="pro" onclick="window.location.href='singleproduct.html'; localStorage.setItem('productNumber', ${suggestion.id});">
-          <img src="${suggestion.image}">
+          <img src="${suggestion.image[0]}">
           <div class="des">
             <span>${suggestion.owner}</span>
             <h5>${suggestion.name}</h5>
