@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAW</title>
-    <link rel="icon" href="img/favicon.png">
+    <title>2kye Wear</title>
+    <link rel="icon" href="img/logo2k.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
 
     <link rel="stylesheet" href="style.css">
@@ -14,7 +14,7 @@
 
 <body>
     <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo"></a>
+        <a href="#"><img src="img/logo2k.png" class="logo"></a>
         <div>
             <ul id="navbar">
                 <li><a href="index.html">Anasayfa</a></li>
@@ -40,6 +40,70 @@
     <section id="product1" class="section-p1">
         <h2>Benzer Ürünler</h2>
         <div class="pro-suggestion">
+            <div class="pro">
+                <img src="img/products/n1.jpg">
+                <div class="des">
+                    <span>2kye</span>
+                    <h5>High On Life</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>300₺</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg">
+                <div class="des">
+                    <span>2kye</span>
+                    <h5>Runners</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>300₺</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg">
+                <div class="des">
+                    <span>2kye</span>
+                    <h5>Ill Will</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>300₺</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg">
+                <div class="des">
+                    <span>2kye</span>
+                    <h5>Hennesy</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>300₺</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
         </div>
     </section>
 
@@ -56,10 +120,10 @@
 
     <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="img/logo.png">
+            <img class="logo" src="img/logo2k.png">
             <h4>İletişim</h4>
-            <p><strong>Adres:</strong> Akdeniz Üniversitesi</p>
-            <p><strong>Telefon:</strong> +90 531 531 31 31</p>
+            <p><strong>Adres:</strong>Akdeniz Üniversitesi</p>
+            <p><strong>Telefon:</strong>+90 531 531 31 31</p>
             <p><strong>Çalışma Saatleri:</strong> 10:00 - 18:00, Pazartesi - Cumartesi</p>
             <div class="follow">
                 <h4>Bizi Takip Edin</h4>
@@ -73,7 +137,7 @@
             </div>
         </div>
         <div class="col">
-            <h4>BAW</h4>
+            <h4>2kye</h4>
             <a href="#">Hakkımızda</a>
             <a href="#">Kargolama</a>
             <a href="#">Gizlilik Sözleşmesi</a>
@@ -88,10 +152,32 @@
             <a href="#">Sipariş Takibi</a>
             <a href="#">Yardım</a>
         </div>
+        <div class="col install">
+            <h4>Uygulamayı İndir</h4>
+            <p>App Store veya Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg">
+                <img src="img/pay/play.jpg">
+            </div>
+            <p>Güvenli Ödeme Yöntemleri</p>
+            <img src="img/pay/pay.png">
+        </div>
         <div class="copyright">
-            <p>2023@, BAW Accessory</p>
+            <p>@2023, 2kye Wear</p>
         </div>
     </footer>
+
+    <!--<script type="module" src="script.js"></script>-->
+    <script>
+        let mainImg = document.getElementById("mainImg");
+        let smallImg = document.getElementsByClassName("smallImg");
+
+        for (let i = 0; i < smallImg.length; i++) {
+            smallImg[i].onclick = function () {
+                mainImg.src = smallImg[i].src;
+            }
+        }
+    </script>
     <script type="module" src="script.js"></script>
     <script type="module" src="singleproduct.js"></script>
 </body>

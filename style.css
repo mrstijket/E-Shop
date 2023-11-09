@@ -117,7 +117,7 @@ body {
 }
 
 #navbar li a.active {
-  color: tomato;
+  color: steelblue;
 }
 
 #navbar li a::after,
@@ -129,7 +129,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: tomato;
+  background-color: steelblue;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -151,7 +151,7 @@ body {
 /* Home Page Stylesheet */
 
 #hero {
-  background-image: url("img/hero3.jpg");
+  background-image: url("img/bg27.png");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -163,24 +163,22 @@ body {
   justify-content: center;
 }
 
-#hero p,
-#hero h1,
-#hero h2,
-#hero h4 {
-  -webkit-text-stroke: darkgray 1px;
-  color: #AAF2FB;
-}
-
 #hero h4 {
   padding-bottom: 15px;
 }
 
+#hero h1 {
+  color: tomato;
+}
 
+#hero p {
+  color: #fff;
+}
 
 /*#hero button {
   background-image: url("img/button.png");
   background-color: transparent;
-  color: #fff;
+  color: darkolivegreen;
   border: 0;
   padding: 12px 50px 14px 50px;
   background-repeat: no-repeat;
@@ -250,8 +248,7 @@ body {
 }
 
 #product1 .pro-container,
-#product1 .pro-suggestion,
-#product1 .pro-new {
+#product1 .pro-suggestion {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
@@ -509,7 +506,7 @@ footer .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 15% 50px 0;
+  margin-bottom: 20px;
 }
 
 footer .logo {
@@ -613,11 +610,10 @@ footer .copyright {
 
 .small-img-group {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .small-img-col {
-  display: flex;
   flex-basis: 24%;
   cursor: pointer;
 }
