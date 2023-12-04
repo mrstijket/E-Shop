@@ -748,6 +748,7 @@ footer .copyright {
   }
 
   #feature .fe-box {
+    min-width: 26%;
     margin: 15px;
   }
 
@@ -866,8 +867,8 @@ footer .copyright {
   }
 
   #feature .fe-box {
-    width: 40%;
-    margin: 10px;
+    min-width: 38%;
+    margin: 15px;
   }
 
   #feature {
