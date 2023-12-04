@@ -197,9 +197,9 @@ body {
 }
 
 #feature .fe-box {
-  width: 180px;
+  width: 160px;
   text-align: center;
-  padding: 25px 10px;
+  padding: 25px 15px;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   border-radius: 4px;
