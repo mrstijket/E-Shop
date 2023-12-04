@@ -85,9 +85,9 @@ for (let suggestionCount = 1; suggestionCount < products.length; suggestionCount
             </div>
             <h4>${(suggestion.priceCents / 100).toFixed(2)} ₺</h4>
           </div>
-          <button id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${suggestion.id});">
+          <button class="cart" id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${suggestion.id});">
           <!--<button id="addCart" onclick="detail(${suggestion.id})">-->
-          <a><i class="fal fa-shopping-cart cart"></i></a></button>
+          <a><i class="fal fa-shopping-cart"></i></a></button>
         </div>
         `;
     }

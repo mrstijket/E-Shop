@@ -37,9 +37,9 @@ function firstSection() {
           </div>
           <h4>${(product.priceCents / 100).toFixed(2)} ₺</h4>
         </div>
-        <button id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
+        <button class="cart" id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
         <!--<button id="addCart" onclick="detail(${product.id})">-->
-        <a><i class="fal fa-shopping-cart cart"></i></a></button>
+        <a><i class="fal fa-shopping-cart"></i></a></button>
       </div>
     `;
     }
@@ -71,9 +71,9 @@ function secondSection() {
             </div>
             <h4>${(product.priceCents / 100).toFixed(2)} ₺</h4>
           </div>
-          <button id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
+          <button class="cart" id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
           <!--<button id="addCart" onclick="detail(${product.id})">-->
-          <a><i class="fal fa-shopping-cart cart"></i></a></button>
+          <a><i class="fal fa-shopping-cart"></i></a></button>
         </div>
       `;
     }

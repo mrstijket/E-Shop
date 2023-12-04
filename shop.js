@@ -5,6 +5,10 @@ let base = document.getElementById("product1");
 let pageNumber = localStorage.getItem("pageNumber");
 
 function refreshPage() {
+  if (pageNumber == null) {
+    base.innerHTML = `<div class="pro-container">
+  </div>`;
+  }
   if (pageNumber == 1) {
     base.innerHTML = `<div class="pro-container">
   </div>`;
