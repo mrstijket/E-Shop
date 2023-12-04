@@ -17,62 +17,71 @@ if (close) {
   })
 }
 
-let productsHTML = '';
+function firstSection() {
+  let productsHTML = '';
 
-products.forEach((product) => {
-  productsHTML += `
-    <div class="pro" onclick="window.location.href='singleproduct.html'; localStorage.setItem('productNumber', ${product.id});">
-      <img src="${product.image[0]}">
-      <div class="des">
-        <span>${product.owner}</span>
-        <h5>${product.name}</h5>
-        <div class="star"> 
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
+  products.forEach((product) => {
+    if (product.id <= 8) {
+      productsHTML += `
+      <div class="pro" onclick="window.location.href='singleproduct.html'; localStorage.setItem('productNumber', ${product.id});">
+        <img src="${product.image[0]}">
+        <div class="des">
+          <span>${product.owner}</span>
+          <h5>${product.name}</h5>
+          <div class="star"> 
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h4>${(product.priceCents / 100).toFixed(2)} ₺</h4>
         </div>
-        <h4>${(product.priceCents / 100).toFixed(2)} ₺</h4>
+        <button id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
+        <!--<button id="addCart" onclick="detail(${product.id})">-->
+        <a><i class="fal fa-shopping-cart cart"></i></a></button>
       </div>
-      <button id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
-      <!--<button id="addCart" onclick="detail(${product.id})">-->
-      <a><i class="fal fa-shopping-cart cart"></i></a></button>
-    </div>
-  `;
-});
+    `;
+    }
+  });
 
+  if (document.querySelector('.pro-container')) {
+    document.querySelector('.pro-container').innerHTML = productsHTML;
+  }
+}
+firstSection();
 
-if (document.querySelector('.pro-container')) {
-  document.querySelector('.pro-container').innerHTML = productsHTML;
+function secondSection() {
+  let newProductsHTML = '';
+
+  products.forEach((product) => {
+    if (product.id > 8) {
+      newProductsHTML += `
+        <div class="pro" onclick="window.location.href='singleproduct.html'; localStorage.setItem('productNumber', ${product.id});">
+          <img src="${product.image[0]}">
+          <div class="des">
+            <span>${product.owner}</span>
+            <h5>${product.name}</h5>
+            <div class="star"> 
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>${(product.priceCents / 100).toFixed(2)} ₺</h4>
+          </div>
+          <button id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
+          <!--<button id="addCart" onclick="detail(${product.id})">-->
+          <a><i class="fal fa-shopping-cart cart"></i></a></button>
+        </div>
+      `;
+    }
+  });
+
+  if (document.querySelector('.pro-new')) {
+    document.querySelector('.pro-new').innerHTML = newProductsHTML;
+  }
 }
 
-let newProductsHTML = '';
-
-products.forEach((product) => {
-  newProductsHTML += `
-    <div class="pro" onclick="window.location.href='singleproduct.html'; localStorage.setItem('productNumber', ${product.id});">
-      <img src="${product.image[0]}">
-      <div class="des">
-        <span>${product.owner}</span>
-        <h5>${product.name}</h5>
-        <div class="star"> 
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-        </div>
-        <h4>${(product.priceCents / 100).toFixed(2)} ₺</h4>
-      </div>
-      <button id="addCart" onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});">
-      <!--<button id="addCart" onclick="detail(${product.id})">-->
-      <a><i class="fal fa-shopping-cart cart"></i></a></button>
-    </div>
-  `;
-});
-
-
-if (document.querySelector('.pro-new')) {
-  document.querySelector('.pro-new').innerHTML = newProductsHTML;
-}
+secondSection();

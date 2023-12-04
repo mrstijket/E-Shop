@@ -22,7 +22,7 @@ products.forEach((product) => {
       </select>
       <input type="number" value="1">
       <h2>${(product.priceCents / 100).toFixed(2)} ₺</h2>
-      <button class="normal">Sepete Ekle</button>
+      <button onclick="window.location.replace('singleproduct.html/detail/' + ${product.id});" class="normal">Sepete Ekle</button>
       <h4>Ürün Detayları</h4>
       <span>
         ${product.about}
