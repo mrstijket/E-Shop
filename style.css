@@ -199,11 +199,11 @@ body {
 #feature .fe-box {
   width: 14%;
   text-align: center;
-  padding: 25px 15px;
+  padding: 3% 1%;
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-  border: 0.00001px solid #cce7d0;
+  border: 3px solid #cce7d0;
   border-radius: 1px;
-  margin: 15px 0;
+  margin: 1% 0;
   cursor: pointer;
 }
 
@@ -223,6 +223,7 @@ body {
   border-radius: 4px;
   color: darkolivegreen;
   background-color: #fddde4;
+  font-size: 12px;
 }
 
 #feature .fe-box:nth-child(2) h6 {
@@ -749,7 +750,7 @@ footer .copyright {
 
   #feature .fe-box {
     min-width: 26%;
-    margin: 15px;
+    margin: 3%;
   }
 
   #product1 .pro-container,
@@ -868,11 +869,15 @@ footer .copyright {
 
   #feature .fe-box {
     min-width: 38%;
-    margin: 15px;
+    margin: 3% 6%;
   }
 
   #feature {
     justify-content: space-between;
+  }
+
+  #feature .fe-box h6 {
+    font-size: 9px;
   }
 
   #product1 .pro {
