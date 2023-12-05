@@ -296,17 +296,17 @@ body {
 #product1 .pro .des h5 {
   padding-top: 7px;
   color: 1a1a1a;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 #product1 .pro .des i {
-  font-size: 12px;
+  font-size: 14px;
   color: rgb(243, 181, 25);
 }
 
 #product1 .pro .des h4 {
   padding-top: 1%;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
   color: #088178;
 }
@@ -758,9 +758,21 @@ footer .copyright {
   }
 
   #product1 .pro {
-    min-width: 48%;
+    min-width: 46%;
     margin: 1% 0;
     padding: 1% 3%;
+  }
+
+  #product1 .pro .des h4 {
+    font-size: 16px;
+  }
+
+  #product1 .pro .des h5 {
+    font-size: 18px;
+  }
+
+  #product1 .pro .des i {
+    font-size: 14px;
   }
 
   #banner {
@@ -881,7 +893,20 @@ footer .copyright {
 
   #product1 .pro {
     border: 0.001px solid #cce7d0;
-    width: 49%;
+    width: 47%;
+    margin-bottom: 10%;
+  }
+
+  #product1 .pro .des h4 {
+    font-size: 12px;
+  }
+
+  #product1 .pro .des h5 {
+    font-size: 10px;
+  }
+
+  #product1 .pro .des i {
+    font-size: 10px;
   }
 
   #product1 .pro .cart {
